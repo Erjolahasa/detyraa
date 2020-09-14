@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Hyr";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm("Hyr", "Home", FormMethod.Post))
+{
+<fieldset>
+    <legend>Hyr</legend>
+    @if (ViewBag.ErrorMessage != null && ViewBag.ErrorMessage != "")
+    {
+        <div class="row">
+            <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+        </div>
+    }
+    else if (ViewBag.SuccessMessage != null && ViewBag.SuccessMessage != "")
+    {
+        <div class="row">
+            <div class="alert alert-success">@ViewBag.SuccessMessage</div>
+        </div>
+    }
+    <div class="row">
+        <div class="col-md-2">
+            <label for="txtEmri" class="">Emri</label>
+        </div>
+        <div class="col-md-2">
+            <input type="text" name="Emri" id="txtEmri" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label for="txtMbiemri" class="">Mbiemri</label>
+        </div>
+        <div class="col-md-2">
+            <input type="text" name="Mbiemri" id="txtMbiemri" />
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <button type="submit" class="btn btn-info">Hyr</button>
+            <button type="reset" class="btn btn-dark">Rifresko</button>
+        </div>
+    </div>
+</fieldset>
+}
+
+

@@ -1,0 +1,66 @@
+﻿@model KarteleKlinikeP.Models.Anamneza
+
+@{
+    ViewBag.Title = "Informimi";
+}
+
+<h2>Informimi</h2>
+
+<div>
+    <h4>Anamneza</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ankesat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ankesat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HistorikuSemundjeve)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HistorikuSemundjeve)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MjekimetePerdorura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MjekimetePerdorura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SemundjeteKaluara)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SemundjeteKaluara)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnamnezaFamiljare)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnamnezaFamiljare)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EkzaminimiObjektivSipasOrganve)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EkzaminimiObjektivSipasOrganve)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

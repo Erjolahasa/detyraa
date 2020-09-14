@@ -77,3 +77,7 @@ C:\Users\Rina\Documents\GitHub\detyraa\KlinikeMjekesore\KlinikeMjekesore\obj\Deb
 C:\Users\Rina\Documents\GitHub\detyraa\KlinikeMjekesore\KlinikeMjekesore\obj\Debug\KlinikeMjekesore.csproj.CopyComplete
 C:\Users\Rina\Documents\GitHub\detyraa\KlinikeMjekesore\KlinikeMjekesore\obj\Debug\KlinikeMjekesore.dll
 C:\Users\Rina\Documents\GitHub\detyraa\KlinikeMjekesore\KlinikeMjekesore\obj\Debug\KlinikeMjekesore.pdb
+C:\Users\Rina\Documents\GitHub\detyraa\KlinikeMjekesore\KlinikeMjekesore\bin\EntityFramework.dll
+C:\Users\Rina\Documents\GitHub\detyraa\KlinikeMjekesore\KlinikeMjekesore\bin\EntityFramework.SqlServer.dll
+C:\Users\Rina\Documents\GitHub\detyraa\KlinikeMjekesore\KlinikeMjekesore\bin\EntityFramework.xml
+C:\Users\Rina\Documents\GitHub\detyraa\KlinikeMjekesore\KlinikeMjekesore\bin\EntityFramework.SqlServer.xml

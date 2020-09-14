@@ -1,0 +1,70 @@
+﻿@model KarteleKlinikeP.Models.Shtrimi
+
+@{
+    ViewBag.Title = "Shtrimi";
+}
+
+<h2>Shtrimi</h2>
+<form>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Mjeku</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mjeku">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Kategoria</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>Urgjent</option>
+            <option>Planifikuar</option>
+            <option>Brenda 24 Oreve</option>
+            <option>Rishtrim</option>
+
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect2">Transferuar</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>Spitali me permbledhese te daljes</option>
+            <option>Jashte Rrethit</option>
+            <option>Rekomandime te MPF/MS ambulator</option>
+
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Diagnoza e Dergimit</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Diagnoza e Shtrimit</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Mjeku i Shtrimit</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mjeku i shtrimit">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Diagnoza e Klinike</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Semundje te Tjera</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Diagnoza e Perfundimatare</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Gjendja e Pacientit</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>Sheruar</option>
+            <option>Permirsuar</option>
+            <option>Njelloj</option>
+            <option>Vdekur</option>
+            <option>Transferuar</option>
+
+
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+</form>

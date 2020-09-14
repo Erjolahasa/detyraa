@@ -1,0 +1,36 @@
+﻿@model KarteleKlinikeP.Models.Pacienti
+
+<div>
+    <h4>Pacienti</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Emri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emri)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mbiemri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mbiemri)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Identifikimi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Identifikimi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.Identifikimi }) |
+    @Html.ActionLink("Back to List", "Details")
+</p>
