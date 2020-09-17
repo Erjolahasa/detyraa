@@ -1,0 +1,69 @@
+﻿@model IEnumerable<KarteleKlinikeP.Models.Person>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+    
+    @using (Html.BeginForm("DetailsList", "Home", FormMethod.Get))
+    { 
+        <input type="text" name="search" id="search" placeholder="Kerko per Pacient" />
+    <input type="submit" value="Kerko" />
+    }
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Emri)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mbiemri)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adressa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adressa2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qyteti)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pavioni)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KodiPacientit)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emri)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mbiemri)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adressa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adressa2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qyteti)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pavioni)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KodiPacientit)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
