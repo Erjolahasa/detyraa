@@ -1,0 +1,70 @@
+﻿@model KarteleKlinikeP.Models.Person
+
+<div>
+    <h4>Regjistrohu</h4>
+    <h3>Ju lutem plotesoni te dhenat</h3>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Emri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emri)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mbiemri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mbiemri)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adressa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adressa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adressa2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adressa2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Qyteti)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Qyteti)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pavioni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pavioni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KodiPacientit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KodiPacientit)
+        </dd>
+
+    </dl>
+</div>
+<p>
+   
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "DetailList")
+</p>
