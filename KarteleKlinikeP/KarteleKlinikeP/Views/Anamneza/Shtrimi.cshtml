@@ -1,0 +1,84 @@
+﻿@model KarteleKlinikeP.Models.shtrimi
+
+<div>
+    <h4>shtrimi</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mjeku)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mjeku)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiagnozaeDergimit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiagnozaeDergimit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiagnozaeShtrimit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiagnozaeShtrimit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MjekuShtrimit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MjekuShtrimit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiagnozaKlinike)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiagnozaKlinike)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SemundjeTeTjera)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SemundjeTeTjera)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiagnozaPerfundimatre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiagnozaPerfundimatre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataEDaljes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataEDaljes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

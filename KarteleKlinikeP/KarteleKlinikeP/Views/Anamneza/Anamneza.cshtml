@@ -1,75 +1,60 @@
 ﻿@model KarteleKlinikeP.Models.Anamneza
 
-@{
-    ViewBag.Title = "Anamneza";
-}
-
-<h2>Anamneza</h2>
-
-@using (Html.BeginForm()) 
-{
-    @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>Anamneza</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.Ankesat, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Ankesat, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Ankesat, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.HistorikuSemundjeve, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.HistorikuSemundjeve, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.HistorikuSemundjeve, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.MjekimetePerdorura, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.MjekimetePerdorura, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.MjekimetePerdorura, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.SemundjeteKaluara, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.SemundjeteKaluara, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.SemundjeteKaluara, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.AnamnezaFamiljare, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.AnamnezaFamiljare, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.AnamnezaFamiljare, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.EkzaminimiObjektivSipasOrganve, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.EkzaminimiObjektivSipasOrganve, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.EkzaminimiObjektivSipasOrganve, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </div>
-    </div>
-}
-
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    <h4>Anamneza</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ankesat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ankesat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HistorikuSemundjeve)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HistorikuSemundjeve)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MjekimetePerdorura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MjekimetePerdorura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SemundjeteKaluara)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SemundjeteKaluara)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnamnezaFamiljare)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnamnezaFamiljare)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EkzaminimiObjektivSipasOrganve)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EkzaminimiObjektivSipasOrganve)
+        </dd>
+
+    </dl>
 </div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
